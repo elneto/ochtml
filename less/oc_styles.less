@@ -97,6 +97,38 @@ body {
     color: #333333;
     background-color: white;
 }
+//UN required
+.language-switcher .language-title {
+    float: right;
+    margin-right: 10.4px;
+    line-height: 1.2;
+}
+
+.language-switcher button.navbar-toggle span.icon-bar {
+    background-color: #00adef;
+}
+// .navbar-default .navbar-toggle .icon-bar {
+//     background-color: #888;
+// }
+.navbar-toggle {
+    position: relative;
+    float: right;
+    margin: -10px 0 0 0;
+    padding: 9px 10px;
+    background-color: transparent;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+.navbar-toggle .icon-bar + .icon-bar {
+    margin-top: 4px;
+}
+.navbar-toggle .icon-bar {
+    display: block;
+    width: 22px;
+    height: 2px;
+    border-radius: 1px;
+}
 //responsive
 @media (max-width: @screen-md) {
     .sdText{
@@ -107,5 +139,12 @@ body {
     }
     .logoText{
         margin: 0 0 0 2em;
+    }
+}
+
+//UN required responsive
+@media (max-width: 767px){
+    .visible-xs-inline {
+        display: inline !important;
     }
 }
