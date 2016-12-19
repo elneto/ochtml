@@ -2,7 +2,7 @@
 @gray-topfooter: 	#f2f2f2;
 @blue-primary: 		#00adef;
 
-//top bar
+//un bar
 #brand-bar {
     background: @gray-topfooter;
     margin: 0;
@@ -45,11 +45,46 @@
 		list-style: none;
 		li{
 			display: inline;
-			margin-right: 13px;
+			margin-left: 13px;
 		}
 	}
 }
 
+//top banner
+#topBarArea {
+    height: 80px;
+}
+
+img.topLogo{
+    max-height: 62px;
+}
+
+img.unLogo {
+    float: left;
+}
+
+img.sdgLogo {
+    float: right;
+}
+
+.logoText {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    margin-top: -8px;
+}
+
+.sdText {
+    color: #0a97d9;
+    font-weight: 500;
+    font-size: 32px;
+    letter-spacing: -0.02em;
+}
+
+.sdSubText {
+    color: #4d4d4d;
+    font-size: 16px;
+    letter-spacing: -0.02em;
+}
 //main.less
 body {
     font-family: "Roboto","Helvetica Neue",Helvetica,Arial,sans-serif;

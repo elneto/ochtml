@@ -38,7 +38,35 @@
 }
 #language-switcher ul li {
   display: inline;
-  margin-right: 13px;
+  margin-left: 13px;
+}
+#topBarArea {
+  height: 80px;
+}
+img.topLogo {
+  max-height: 62px;
+}
+img.unLogo {
+  float: left;
+}
+img.sdgLogo {
+  float: right;
+}
+.logoText {
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  margin-top: -8px;
+}
+.sdText {
+  color: #0a97d9;
+  font-weight: 500;
+  font-size: 32px;
+  letter-spacing: -0.02em;
+}
+.sdSubText {
+  color: #4d4d4d;
+  font-size: 16px;
+  letter-spacing: -0.02em;
 }
 body {
   font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
