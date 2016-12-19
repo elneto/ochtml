@@ -1,6 +1,8 @@
 //variables
 @gray-topfooter: 	#f2f2f2;
 @blue-primary: 		#00adef;
+@blue-banner-text:  #0a97d9;
+@dark-banner-text:  #4d4d4d;
 @size-banner:       32px;
 @screen-md:         992px;
 @screen-sm:         768px;
@@ -75,19 +77,22 @@ img.sdgLogo {
     text-transform: uppercase;
     margin-top: -8px;
     float: left;
+    letter-spacing: -0.02em;
 }
 
 .sdText {
-    color: #0a97d9;
+    color: @blue-banner-text;
     font-weight: 500;
     font-size: @size-banner;
-    letter-spacing: -0.02em;
 }
 
 .sdSubText {
-    color: #4d4d4d;
+    color: @dark-banner-text;
     font-size: (@size-banner/2);
-    letter-spacing: -0.02em;
+}
+
+.banner-text-color{
+    color: @blue-banner-text;
 }
 //main.less
 body {
