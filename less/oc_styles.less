@@ -1,6 +1,9 @@
 //variables
 @gray-topfooter: 	#f2f2f2;
 @blue-primary: 		#00adef;
+@size-banner:       32px;
+@screen-md:         992px;
+@screen-sm:         768px;
 
 //un bar
 #brand-bar {
@@ -71,18 +74,19 @@ img.sdgLogo {
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
     margin-top: -8px;
+    float: left;
 }
 
 .sdText {
     color: #0a97d9;
     font-weight: 500;
-    font-size: 32px;
+    font-size: @size-banner;
     letter-spacing: -0.02em;
 }
 
 .sdSubText {
     color: #4d4d4d;
-    font-size: 16px;
+    font-size: (@size-banner/2);
     letter-spacing: -0.02em;
 }
 //main.less
@@ -93,5 +97,15 @@ body {
     color: #333333;
     background-color: white;
 }
-
-
+//responsive
+@media (max-width: @screen-md) {
+    .sdText{
+        font-size: (@size-banner - 8);
+    }
+    .sdSubText{
+        font-size: (@size-banner/2 - 6);
+    }
+    .logoText{
+        margin: 0 0 0 2em;
+    }
+}
