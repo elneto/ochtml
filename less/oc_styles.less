@@ -134,6 +134,36 @@ body {
     height: 2px;
     border-radius: 1px;
 }
+//navbar menu
+.navbar-wrapper {
+    position: relative;
+    height: 0;
+}
+
+.menu-style-ocean(){
+    background-color: @blue-banner-text;
+    font-size: 12px;
+    float: left;
+    text-decoration: none;
+    font-family: Oswald;
+    
+    color: white;
+    text-transform: uppercase;
+}
+
+.bg-blue{
+    background-color: @blue-banner-text;
+    li{  
+        padding: 3px 10px;
+        border-right: 1px solid #f2f2f2;
+        height: 35px;
+        .menu-style-ocean;
+        a{
+            color: white;
+        }
+    }
+
+}
 //responsive
 @media (max-width: @screen-md) {
     .sdText{
